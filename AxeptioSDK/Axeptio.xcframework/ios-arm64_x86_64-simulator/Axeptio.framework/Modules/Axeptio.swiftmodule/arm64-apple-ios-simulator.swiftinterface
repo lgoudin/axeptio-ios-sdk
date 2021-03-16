@@ -1,0 +1,34 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Axeptio
+import Alamofire
+import Foundation
+import KeychainSwift
+import Kingfisher
+import SafariServices
+import Swift
+import UIKit
+@_hasMissingDesignatedInitializers final public class Axeptio {
+  public static let shared: Axeptio.Axeptio
+  public enum Error : Swift.Error {
+    case notInitialized
+    case alreadyInitialized
+    case invalidClientId
+    case unknownVersion
+    case networkFailed
+    case apiFailed
+    public static func == (a: Axeptio.Axeptio.Error, b: Axeptio.Axeptio.Error) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  final public func initialize(clientId: Swift.String, completionHandler: @escaping (Axeptio.Axeptio.Error?) -> Swift.Void)
+  final public func getUserConsent(forVendor name: Swift.String) -> Swift.Bool?
+  final public func clearUserConsents()
+  @discardableResult
+  final public func showCookiesController(version: Swift.String, onlyFirstTime: Swift.Bool = true, in viewController: UIKit.UIViewController, animated: Swift.Bool = true, completionHandler: @escaping (Axeptio.Axeptio.Error?) -> Swift.Void) -> (() -> Swift.Void)?
+  @objc deinit
+}
+extension Axeptio.Axeptio.Error : Swift.Equatable {}
+extension Axeptio.Axeptio.Error : Swift.Hashable {}

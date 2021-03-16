@@ -1,0 +1,4 @@
+framework module Axeptio {
+  header "Axeptio-Swift.h"
+  requires objc
+}

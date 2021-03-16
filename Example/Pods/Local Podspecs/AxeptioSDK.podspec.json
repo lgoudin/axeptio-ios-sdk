@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of AxeptioSDK.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Axeptio/AxeptioSDK",
+  "homepage": "https://github.com/agilitation/axeptio-ios-sdk",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -18,8 +18,8 @@
   "platforms": {
     "ios": "11.0"
   },
-  "preserve_paths": "AxeptioSDK/Axeptio.framework",
-  "vendored_frameworks": "AxeptioSDK/Axeptio.framework",
+  "preserve_paths": "AxeptioSDK/Axeptio.xcframework",
+  "vendored_frameworks": "AxeptioSDK/Axeptio.xcframework",
   "frameworks": "UIKit",
   "dependencies": {
     "KeychainSwift": [

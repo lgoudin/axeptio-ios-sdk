@@ -53,11 +53,13 @@ func initialize(clientId: String, completionHandler: @escaping (Error?) -> Void)
 
 ### showCookiesController
 
-The `showCookiesController` function shows Axeptio's widget to the user in a given view controller and calls the completion handler when the user has made his choices. If the user has already made his choices in a previous call the widget is not shown and the completion is called immediately. However if the `version` is different or the configuration includes new vendors then the widget is shown again.
+The `showCookiesController` function shows Axeptio's widget to the user in a given view controller and calls the completion handler when the user has made his choices. If `onlyFirstTime` is true and the user has already made his choices in a previous call the widget is not shown and the completion is called immediately. However if the `version` is different or the configuration includes new vendors then the widget is shown again.
 
 ```swift
-func showCookiesController(version: String, in viewController: UIViewController, animated: Bool = true, completionHandler: @escaping (Error?) -> Void)
+func showCookiesController(version: String, onlyFirstTime: Bool = true, in viewController: UIViewController, animated: Bool = true, completionHandler: @escaping (Error?) -> Void) -> (() -> Void)?
 ```
+
+If the widget is shown the function returns a dismiss handler that you can call to hide the widget should you need it. Otherwise returns nil.
 
 ### getUserConsent
 
