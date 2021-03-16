@@ -1,0 +1,35 @@
+{
+  "name": "AxeptioSDK",
+  "version": "0.1.0",
+  "summary": "A short description of AxeptioSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Axeptio/AxeptioSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Axeptio": "support@axeptio.eu"
+  },
+  "source": {
+    "git": "https://github.com/agilitation/axeptio-ios-sdk.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "preserve_paths": "AxeptioSDK/Axeptio.framework",
+  "vendored_frameworks": "AxeptioSDK/Axeptio.framework",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "KeychainSwift": [
+
+    ],
+    "Alamofire": [
+      "~> 5.2"
+    ],
+    "Kingfisher": [
+
+    ]
+  }
+}

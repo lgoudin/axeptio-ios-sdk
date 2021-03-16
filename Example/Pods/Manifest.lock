@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (5.4.1)
+  - AxeptioSDK (0.1.0):
+    - Alamofire (~> 5.2)
+    - KeychainSwift
+    - Kingfisher
+  - KeychainSwift (19.0.0)
+  - Kingfisher (6.2.1)
+
+DEPENDENCIES:
+  - AxeptioSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainSwift
+    - Kingfisher
+
+EXTERNAL SOURCES:
+  AxeptioSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  AxeptioSDK: 0209509de027d26464af4edc44657f25dc5452b4
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
+
+PODFILE CHECKSUM: 1952ceaa6ca6d5654ccb62c53143648132edf7d9
+
+COCOAPODS: 1.10.0

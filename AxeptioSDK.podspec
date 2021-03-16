@@ -21,22 +21,19 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/LyricApps/AxeptioSDK'
+  s.homepage         = 'https://github.com/Axeptio/AxeptioSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'LyricApps' => 'cyril.anger@lyricapps.com' }
-  s.source           = { :git => 'https://github.com/LyricApps/AxeptioSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Axeptio' => 'support@axeptio.eu' }
+  s.source           = { :git => 'https://github.com/agilitation/axeptio-ios-sdk.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'AxeptioSDK/Classes/**/*'
+  s.preserve_paths = 'AxeptioSDK/Axeptio.framework'
+  s.vendored_frameworks = 'AxeptioSDK/Axeptio.framework'
   
-  # s.resource_bundles = {
-  #   'AxeptioSDK' => ['AxeptioSDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+  s.dependency 'KeychainSwift'
+  s.dependency 'Alamofire', '~> 5.2'
+  s.dependency 'Kingfisher'
 end

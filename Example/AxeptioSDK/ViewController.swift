@@ -2,23 +2,24 @@
 //  ViewController.swift
 //  AxeptioSDK
 //
-//  Created by LyricApps on 02/26/2021.
-//  Copyright (c) 2021 LyricApps. All rights reserved.
+//  Created by Axeptio on 02/26/2021.
+//  Copyright (c) 2021 Axeptio. All rights reserved.
 //
 
 import UIKit
+import Axeptio
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		Axeptio.shared.initialize(clientId: "<Replace with your client ID>") { [weak self] error in
+			guard self != nil && error == nil else {
+				return
+			}
+			Axeptio.shared.showCookiesController(version: "<Replace with your version>", in: self!) { error in
+				let result = Axeptio.shared.getUserConsent(forVendor: "google_analytics")
+				print("Google Analytics consent is \(result)")
+			}
+		}
+	}
 }
-
