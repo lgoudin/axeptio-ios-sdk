@@ -212,12 +212,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS_NAMED("AxeptioObjCWrapper")
 @interface Axeptio : NSObject
-- (void)initializeWithClientId:(NSString * _Nonnull)clientId completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
-- (BOOL)hasUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)getUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-- (void)clearUserConsents;
-- (void (^ _Nullable)(void))showCookiesControllerWithVersion:(NSString * _Nonnull)version onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (void)initializeWithClientId:(NSString * _Nonnull)clientId completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
++ (BOOL)hasUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)getUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
++ (void)clearUserConsents;
++ (void (^ _Nullable)(void))showCookiesControllerWithVersion:(NSString * _Nonnull)version onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 @end
 
 
@@ -442,12 +443,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS_NAMED("AxeptioObjCWrapper")
 @interface Axeptio : NSObject
-- (void)initializeWithClientId:(NSString * _Nonnull)clientId completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
-- (BOOL)hasUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)getUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-- (void)clearUserConsents;
-- (void (^ _Nullable)(void))showCookiesControllerWithVersion:(NSString * _Nonnull)version onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (void)initializeWithClientId:(NSString * _Nonnull)clientId completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
++ (BOOL)hasUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)getUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
++ (void)clearUserConsents;
++ (void (^ _Nullable)(void))showCookiesControllerWithVersion:(NSString * _Nonnull)version onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 @end
 
 
