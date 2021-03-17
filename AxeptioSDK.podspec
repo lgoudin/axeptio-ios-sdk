@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AxeptioSDK'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Axeptio SDK for presenting cookies consent to the user'
 
 # This description is used to generate tags and improve search results.
@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.ios.deployment_target = '11.0'
 
-  s.preserve_paths = 'AxeptioSDK/Axeptio.xcframework'
-  s.vendored_frameworks = 'AxeptioSDK/Axeptio.xcframework'
+  s.preserve_paths = 'AxeptioSDK/AxeptioSDK.xcframework'
+  s.vendored_frameworks = 'AxeptioSDK/AxeptioSDK.xcframework'
   
   s.frameworks = 'UIKit'
   s.dependency 'KeychainSwift'

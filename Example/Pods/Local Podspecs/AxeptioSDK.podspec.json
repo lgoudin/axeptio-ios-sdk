@@ -1,8 +1,8 @@
 {
   "name": "AxeptioSDK",
-  "version": "0.1.0",
-  "summary": "A short description of AxeptioSDK.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.2",
+  "summary": "Axeptio SDK for presenting cookies consent to the user",
+  "description": "Axeptio SDK for presenting cookies consent to the user",
   "homepage": "https://github.com/agilitation/axeptio-ios-sdk",
   "license": {
     "type": "MIT",
@@ -13,13 +13,14 @@
   },
   "source": {
     "git": "https://github.com/agilitation/axeptio-ios-sdk.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
+  "swift_versions": "5.0",
   "platforms": {
     "ios": "11.0"
   },
-  "preserve_paths": "AxeptioSDK/Axeptio.xcframework",
-  "vendored_frameworks": "AxeptioSDK/Axeptio.xcframework",
+  "preserve_paths": "AxeptioSDK/AxeptioSDK.xcframework",
+  "vendored_frameworks": "AxeptioSDK/AxeptioSDK.xcframework",
   "frameworks": "UIKit",
   "dependencies": {
     "KeychainSwift": [
@@ -31,5 +32,6 @@
     "Kingfisher": [
 
     ]
-  }
+  },
+  "swift_version": "5.0"
 }

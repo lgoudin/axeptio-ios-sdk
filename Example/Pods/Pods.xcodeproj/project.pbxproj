@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = FC22B6AFB03E90DD3154C866E5DCCD7A /* Build configuration list for PBXAggregateTarget "AxeptioSDK" */;
 			buildPhases = (
-				2DA6344AF83FD40712C606F320710565 /* [CP] Copy XCFrameworks */,
+				3EE4E55323BE31EDD6E4E4893EA6F9C7 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 				79AEE570C87C9CDD5C5ED5E46704E55A /* PBXTargetDependency */,
@@ -202,6 +202,7 @@
 		0444DAA2200CDA16170931D4CE6D25DB /* NSTextAttachment+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextAttachment+Kingfisher.swift"; path = "Sources/Extensions/NSTextAttachment+Kingfisher.swift"; sourceTree = "<group>"; };
 		059CCBB241275BC7E7ACCC6449479C82 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/Cache/CacheSerializer.swift; sourceTree = "<group>"; };
 		0676328859883E21A82B89F6D12158B3 /* KF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KF.swift; path = Sources/General/KF.swift; sourceTree = "<group>"; };
+		09F15C06C5BE964F3070DB27A399BADE /* AxeptioSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AxeptioSDK.xcframework; path = AxeptioSDK/AxeptioSDK.xcframework; sourceTree = "<group>"; };
 		0BD06215360AFE56DC774E8CE0D82F70 /* ImageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageModifier.swift; path = Sources/Networking/ImageModifier.swift; sourceTree = "<group>"; };
 		0DCB774126D7C538B76906B28837BB84 /* ImageProgressive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProgressive.swift; path = Sources/Image/ImageProgressive.swift; sourceTree = "<group>"; };
 		0EBB208461BC21190B0A307F50FCDB9C /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
@@ -304,7 +305,6 @@
 		B38C655DA005C90523F61F7E1E09B457 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		B786B63C5399C6FEB63A7210766F6389 /* AxeptioSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AxeptioSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BA925FAE15AB7E65514DA79AB6B553D8 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Utility/Box.swift; sourceTree = "<group>"; };
-		BB7F9857FDBCD07F55C2F4D0AA49CE09 /* Axeptio.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Axeptio.xcframework; path = AxeptioSDK/Axeptio.xcframework; sourceTree = "<group>"; };
 		BCE29037647BDE896D3E4D4D58089441 /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
 		BF0D54A575DB9EA85D7A597FFAF21867 /* WKInterfaceImage+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WKInterfaceImage+Kingfisher.swift"; path = "Sources/Extensions/WKInterfaceImage+Kingfisher.swift"; sourceTree = "<group>"; };
 		C043352179FEDDE351E63C77432E98CC /* Pods-AxeptioSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AxeptioSDK_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -600,14 +600,6 @@
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
-		7D8AC2886BD6E800F4E15127D60D60BA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BB7F9857FDBCD07F55C2F4D0AA49CE09 /* Axeptio.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		9722A2BFE70CAE4BABC576F35E242275 /* Pods-AxeptioSDK_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -640,7 +632,7 @@
 		C008F48D79DB1EE7971487FC8F966676 /* AxeptioSDK */ = {
 			isa = PBXGroup;
 			children = (
-				7D8AC2886BD6E800F4E15127D60D60BA /* Frameworks */,
+				FF9CCF8302E750C85404CA772BBBFEEB /* Frameworks */,
 				68096736ADED05C2CFF437D99556F554 /* Pod */,
 				D5BFA9E92B27E3BA0D7CB10C1CD65180 /* Support Files */,
 			);
@@ -697,6 +689,14 @@
 				2FA8C2E40876CD672BB8325FA8F0392B /* Pods_AxeptioSDK_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FF9CCF8302E750C85404CA772BBBFEEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09F15C06C5BE964F3070DB27A399BADE /* AxeptioSDK.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -911,18 +911,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2DA6344AF83FD40712C606F320710565 /* [CP] Copy XCFrameworks */ = {
+		3EE4E55323BE31EDD6E4E4893EA6F9C7 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/AxeptioSDK/AxeptioSDK-xcframeworks.sh",
-				"${PODS_ROOT}/../../AxeptioSDK/Axeptio.xcframework",
+				"${PODS_ROOT}/../../AxeptioSDK/AxeptioSDK.xcframework",
 			);
 			name = "[CP] Copy XCFrameworks";
 			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Axeptio",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AxeptioSDK",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

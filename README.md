@@ -24,7 +24,7 @@ In the main file of your app, import the `Axeptio` module, initialize the SDK by
 
 ```swift
 import UIKit
-import Axeptio
+import AxeptioSDK
 
 Axeptio.shared.initialize(clientId: "<My client ID>") { error in
 	// Handle error

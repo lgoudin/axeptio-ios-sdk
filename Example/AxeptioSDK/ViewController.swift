@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Axeptio
+import AxeptioSDK
 
 class ViewController: UIViewController {
 	override func viewDidLoad() {
