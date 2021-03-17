@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -206,6 +207,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="AxeptioSDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+@class UIViewController;
+
+SWIFT_CLASS_NAMED("AxeptioObjCWrapper")
+@interface Axeptio : NSObject
+- (void)initializeWithClientId:(NSString * _Nonnull)clientId completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
+- (BOOL)hasUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
+- (void)clearUserConsents;
+- (void (^ _Nullable)(void))showCookiesControllerWithVersion:(NSString * _Nonnull)version onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -407,6 +420,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -423,6 +437,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="AxeptioSDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+@class UIViewController;
+
+SWIFT_CLASS_NAMED("AxeptioObjCWrapper")
+@interface Axeptio : NSObject
+- (void)initializeWithClientId:(NSString * _Nonnull)clientId completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
+- (BOOL)hasUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
+- (void)clearUserConsents;
+- (void (^ _Nullable)(void))showCookiesControllerWithVersion:(NSString * _Nonnull)version onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
