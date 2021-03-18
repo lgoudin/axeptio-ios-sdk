@@ -12,11 +12,11 @@ import AxeptioSDK
 class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		Axeptio.shared.initialize(clientId: "<Replace with your client ID>") { [weak self] error in
+		Axeptio.shared.initialize(clientId: "<Replace with your client ID>", version: "<Replace with your version>") { [weak self] error in
 			guard self != nil && error == nil else {
 				return
 			}
-			Axeptio.shared.showCookiesController(version: "<Replace with your version>", in: self!) { error in
+			Axeptio.shared.showCookiesController(in: self!) { error in
 				let result = Axeptio.shared.getUserConsent(forVendor: "google_analytics")
 				print("Google Analytics consent is \(result)")
 			}

@@ -9,12 +9,12 @@ import SafariServices
 import Swift
 import UIKit
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Axeptio) public class AxeptioObjCWrapper : ObjectiveC.NSObject {
-  @objc public static func initialize(clientId: Swift.String, completionHandler: @escaping (Swift.Error?) -> Swift.Void)
+  @objc public static func initialize(clientId: Swift.String, version: Swift.String, completionHandler: @escaping (Swift.Error?) -> Swift.Void)
   @objc public static func hasUserConsent(forVendor name: Swift.String) -> Swift.Bool
   @objc public static func getUserConsent(forVendor name: Swift.String) -> Swift.Bool
   @objc public static func clearUserConsents()
   @discardableResult
-  @objc public static func showCookiesController(version: Swift.String, onlyFirstTime: Swift.Bool = true, in viewController: UIKit.UIViewController, animated: Swift.Bool = true, completionHandler: @escaping (Swift.Error?) -> Swift.Void) -> (() -> Swift.Void)?
+  @objc public static func showConsentController(initialStepIndex: Swift.Int = 0, onlyFirstTime: Swift.Bool = true, in viewController: UIKit.UIViewController, animated: Swift.Bool = true, completionHandler: @escaping (Swift.Error?) -> Swift.Void) -> (() -> Swift.Void)?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class Axeptio {
@@ -32,11 +32,11 @@ import UIKit
     }
     public func hash(into hasher: inout Swift.Hasher)
   }
-  final public func initialize(clientId: Swift.String, completionHandler: @escaping (AxeptioSDK.Axeptio.Error?) -> Swift.Void)
+  final public func initialize(clientId: Swift.String, version: Swift.String, completionHandler: @escaping (AxeptioSDK.Axeptio.Error?) -> Swift.Void)
   final public func getUserConsent(forVendor name: Swift.String) -> Swift.Bool?
   final public func clearUserConsents()
   @discardableResult
-  final public func showCookiesController(version: Swift.String, onlyFirstTime: Swift.Bool = true, in viewController: UIKit.UIViewController, animated: Swift.Bool = true, completionHandler: @escaping (AxeptioSDK.Axeptio.Error?) -> Swift.Void) -> (() -> Swift.Void)?
+  final public func showConsentController(initialStepIndex: Swift.Int = 0, onlyFirstTime: Swift.Bool = true, in viewController: UIKit.UIViewController, animated: Swift.Bool = true, completionHandler: @escaping (AxeptioSDK.Axeptio.Error?) -> Swift.Void) -> (() -> Swift.Void)?
   @objc deinit
 }
 extension AxeptioSDK.Axeptio.Error : Swift.Equatable {}

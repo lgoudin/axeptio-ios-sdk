@@ -212,11 +212,11 @@ SWIFT_CLASS_NAMED("AxeptioObjCWrapper")
 @interface Axeptio : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-+ (void)initializeWithClientId:(NSString * _Nonnull)clientId completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
++ (void)initializeWithClientId:(NSString * _Nonnull)clientId version:(NSString * _Nonnull)version completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 + (BOOL)hasUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)getUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 + (void)clearUserConsents;
-+ (void (^ _Nullable)(void))showCookiesControllerWithVersion:(NSString * _Nonnull)version onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
++ (void (^ _Nullable)(void))showConsentControllerWithInitialStepIndex:(NSInteger)initialStepIndex onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 @end
 
 
