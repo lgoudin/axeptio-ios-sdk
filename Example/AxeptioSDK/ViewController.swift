@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 			guard self != nil && error == nil else {
 				return
 			}
-			Axeptio.shared.showCookiesController(in: self!) { error in
+			Axeptio.shared.showConsentController(in: self!) { error in
 				let result = Axeptio.shared.getUserConsent(forVendor: "google_analytics")
 				print("Google Analytics consent is \(result)")
 			}

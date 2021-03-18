@@ -1,5 +1,5 @@
 import XCTest
-import Axeptio
+import AxeptioSDK
 
 class Tests: XCTestCase {
     
