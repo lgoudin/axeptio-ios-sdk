@@ -6,7 +6,15 @@ User consent is not only limited to the Web but applies to all platforms collect
 
 ## Installation
 
-### **CocoaPods**
+1. If you haven’t already, install the latest version of [CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation).
+
+2. If you don’t have an existing Podfile, create a new one by running the command:
+
+```bash
+pod init
+```
+
+3. Add `pod 'AxeptioSDK'` to your Podfile:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
@@ -26,38 +34,87 @@ post_install do |installer|
 end
 ```
 
+4. Run the following command:
+
+```bash
+pod install
+```
+
+5. In the future, to update the SDK to its latest version, run the command:
+
+```bash
+pod update AxeptioSDK
+```
+
 ## Getting started
 
-In the main file of your app, import the `Axeptio` module, initialize the SDK by calling the `initialize` method providing a `clientId` and a  `version` . Once initialization is completed, you can show Axeptio's widget in a visible view controller.
+### Swift
+
+In the main controller of your app, import the `AxeptioSDK` module, initialize the SDK by calling the `initialize` method providing a `clientId` and a `version`. Once the initialization is completed, you can make the widget appear by calling the `showConsentController` method.
 
 ```swift
 import UIKit
 import AxeptioSDK
 
-Axeptio.shared.initialize(clientId: "<My client ID>", version: "<My version>") { error in
-	// Handle error
-	// You could try to initialize again after some delay for example
-	...
-	
-	Axeptio.shared.showCookiesController(in: someVisibleViewController) { error in
-		// User has made his choices, we can query them
-		let userConsent = Axeptio.shared.getUserConsent(forVendor: "<Vendor name>")
-		...
-	}
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        Axeptio.shared.initialize(clientId: "<Client ID>", version: "<Version>") { error in
+	    // Handle error
+	    // You could try to initialize again after some delay for example
+            Axeptio.shared.showConsentController(in: self) { error in
+                // User has made his choices
+		// We can now enable or disable the collection of metrics of the analytics library
+                if Axeptio.shared.getUserConsent(forVendor: "<Vendor name>") ?? false {
+                    // Disable collection
+                } else {
+                    // Enable collection
+                }
+            }
+        }
+    }
+
+
 }
 ```
 
 If your app supports multiple languages you probably have created a different version for each of the language in Axeptio's [admin web page](https://admin.axeptio.eu). In this case you can store the version for each language in `Localizable.strings` file and use `NSLocalizedString` to get the appropriate version for the user.
 
-## Objective-C
+### Objective-C
 
 ```objective-c
-[Axeptio initializeWithClientId:@"<My client ID>" version:@"<My version>" completionHandler:^(NSError *error) {
-	[Axeptio showCookiesControllerWithInitialStepIndex:0 onlyFirstTime:YES in:someVisibleViewController animated:YES completionHandler:^(NSError *error) {
-		BOOL userConsent = [Axeptio getUserConsentForVendor:@"<Vendor name>"];
-		...
-	}];
-}];
+#import "ViewController.h"
+#import <AxeptioSDK/AxeptioSDK-Swift.h>
+
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    [Axeptio initializeWithClientId:@"<Client ID>" version:@"<Version>" completionHandler:^(NSError *error) {
+        // Handle error
+        // You could try to initialize again after some delay for example
+        [Axeptio showConsentControllerWithInitialStepIndex:0 onlyFirstTime:TRUE in:self animated:YES completionHandler:^(NSError *error) {
+            // User has made his choices
+            // We can now enable or disable the collection of metrics of the analytics library
+            if ([Axeptio getUserConsentForVendor:@"<Vendor name>"]) {
+                // Disable collection
+            } else {
+                // Enable collection
+            }
+            
+        }];
+    }];
+}
+
+
+@end
 ```
 
 ## API Reference
@@ -70,7 +127,7 @@ The `initialize` function initializes the SDK by fetching the configuration and 
 func initialize(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
 ```
 
-### showCookiesController
+### showConsentController
 
 The `showCookiesController` function shows Axeptio's widget to the user in a given view controller and calls the completion handler when the user has made his choices. If `onlyFirstTime` is true and the user has already made his choices in a previous call the widget is not shown and the completion is called immediately. However if the configuration includes new vendors then the widget is shown again. You can specify an `initialStepIndex` greater than 0 to show a different step directly.
 
