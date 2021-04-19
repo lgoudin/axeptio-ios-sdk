@@ -1,6 +1,6 @@
 {
   "name": "AxeptioSDK",
-  "version": "0.1.2",
+  "version": "0.1.9",
   "summary": "Axeptio SDK for presenting cookies consent to the user",
   "description": "Axeptio SDK for presenting cookies consent to the user",
   "homepage": "https://github.com/agilitation/axeptio-ios-sdk",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/agilitation/axeptio-ios-sdk.git",
-    "tag": "0.1.2"
+    "tag": "0.1.9"
   },
   "swift_versions": "5.0",
   "platforms": {
@@ -25,9 +25,6 @@
   "dependencies": {
     "KeychainSwift": [
 
-    ],
-    "Alamofire": [
-      "~> 5.2"
     ],
     "Kingfisher": [
 

@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AxeptioSDK
-import Alamofire
 import Foundation
 import KeychainSwift
 import Kingfisher
@@ -16,6 +15,15 @@ import UIKit
   @discardableResult
   @objc public static func showConsentController(initialStepIndex: Swift.Int = 0, onlyFirstTime: Swift.Bool = true, in viewController: UIKit.UIViewController, animated: Swift.Bool = true, completionHandler: @escaping (Swift.Error?) -> Swift.Void) -> (() -> Swift.Void)?
   @objc deinit
+}
+extension URLSession {
+  public typealias CancellationHandler = () -> Swift.Void
+  public typealias ProcessingHandler<Result> = (Foundation.Data, Foundation.URLResponse) throws -> Result
+  public typealias CompletionHandler<Result> = (Result?, Foundation.Data?, Swift.Bool, Swift.Error?) -> Swift.Void
+  @discardableResult
+  public func dataTask<Result>(with request: Foundation.URLRequest, processingHandler: @escaping Foundation.URLSession.ProcessingHandler<Result>, completionHandler: @escaping Foundation.URLSession.CompletionHandler<Result>) -> Foundation.URLSession.CancellationHandler
+  @discardableResult
+  public func jsonTask<Result>(with request: Foundation.URLRequest, dateFormatter: Foundation.DateFormatter? = nil, completionHandler: @escaping (Swift.Int?, Result?, Foundation.Data?, Swift.Bool, Swift.Error?) -> Swift.Void) -> Foundation.URLSession.CancellationHandler where Result : Swift.Decodable
 }
 @_hasMissingDesignatedInitializers final public class Axeptio {
   public static let shared: AxeptioSDK.Axeptio

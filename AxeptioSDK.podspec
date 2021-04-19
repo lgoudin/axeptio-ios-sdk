@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AxeptioSDK'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = 'Axeptio SDK for presenting cookies consent to the user'
 
 # This description is used to generate tags and improve search results.
@@ -34,6 +34,5 @@ Pod::Spec.new do |s|
   
   s.frameworks = 'UIKit'
   s.dependency 'KeychainSwift'
-  s.dependency 'Alamofire', '~> 4.9'
   s.dependency 'Kingfisher'
 end

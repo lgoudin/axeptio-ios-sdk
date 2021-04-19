@@ -224,6 +224,7 @@ SWIFT_CLASS_NAMED("AxeptioObjCWrapper")
 
 
 
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -451,6 +452,7 @@ SWIFT_CLASS_NAMED("AxeptioObjCWrapper")
 + (void)clearUserConsents;
 + (void (^ _Nullable)(void))showConsentControllerWithInitialStepIndex:(NSInteger)initialStepIndex onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 @end
+
 
 
 
