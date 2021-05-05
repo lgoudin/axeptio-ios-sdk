@@ -60,7 +60,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Set a custom token
+        // Axeptio.shared.token = "auto-generated-token-xxx"
+
         Axeptio.shared.initialize(clientId: "<Client ID>", version: "<Version>") { error in
 	    // Handle error
 	    // You could try to initialize again after some delay for example
@@ -97,6 +100,9 @@ If your app supports multiple languages you probably have created a different ve
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    // Set a custom token
+    // [Axeptio setToken:@"auto-generated-token-xxx"];
+
     [Axeptio initializeWithClientId:@"<Client ID>" version:@"<Version>" completionHandler:^(NSError *error) {
         // Handle error
         // You could try to initialize again after some delay for example
@@ -108,7 +114,7 @@ If your app supports multiple languages you probably have created a different ve
             } else {
                 // Enable collection
             }
-            
+
         }];
     }];
 }
@@ -119,7 +125,15 @@ If your app supports multiple languages you probably have created a different ve
 
 ## API Reference
 
-### initialize
+### Properties
+
+#### token
+
+The `token` porperty can be used to set a custom token. By default, a random identifier is set.
+
+### Methods
+
+#### initialize
 
 The `initialize` function initializes the SDK by fetching the configuration and calling the completion handler when done. If it fails (because of network for example) it is OK to call the `initialize` function again.
 
@@ -127,7 +141,7 @@ The `initialize` function initializes the SDK by fetching the configuration and 
 func initialize(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
 ```
 
-### showConsentController
+#### showConsentController
 
 The `showConsentController` function shows Axeptio's widget to the user in a given view controller and calls the completion handler when the user has made his choices. If `onlyFirstTime` is true and the user has already made his choices in a previous call the widget is not shown and the completion is called immediately. However if the configuration includes new vendors then the widget is shown again. You can specify an `initialStepIndex` greater than 0 to show a different step directly.
 
@@ -137,7 +151,7 @@ func showConsentController(initialStepIndex: Int = 0, onlyFirstTime: Bool = true
 
 If the widget is shown the function returns a dismiss handler that you can call to hide the widget should you need it. Otherwise returns nil.
 
-### getUserConsent
+#### getUserConsent
 
 The `getUserConsent` function returns an optional boolean indicating if the user has made his choice for given vendor and whether or not he gave his consent. If the returned value is `nil` it either means the vendor was not present in the configuration or the widget has not been presented to the user yet.
 
