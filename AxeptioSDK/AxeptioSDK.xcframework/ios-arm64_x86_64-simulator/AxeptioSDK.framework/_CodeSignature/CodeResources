@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		NoQC3rbMA1l/Cxvd1RAq4sAavv8=
+		/lsYc9V6h330jxSqvzNVj+g0q30=
 		</data>
 		<key>Headers/AxeptioSDK-Swift.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+5ca02rj5u1bgzdabbV2gcMv5vM=
+		cOPKngdO01t3v7IHv+b6Lp8DG8Y=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		+5ca02rj5u1bgzdabbV2gcMv5vM=
+		cOPKngdO01t3v7IHv+b6Lp8DG8Y=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DDBFcTY56051uV41qjNqSgubu7I=
+		DN8GjMZ1iB98F88+dCCZ900ybUo=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		DDBFcTY56051uV41qjNqSgubu7I=
+		DN8GjMZ1iB98F88+dCCZ900ybUo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bHvI7xNif+jRurYP9DkCShQPgWoug3UDPfvlprowxtE=
+			2uMeRsKQ743UmYZOw3mbE53ZpJ1Onp0Pt60XJ4jQWjc=
 			</data>
 		</dict>
 		<key>Headers/AxeptioSDK-Swift.h</key>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MlFRT/u3mqw7IV9KGbz6RlGYZnGTKJ/RJfcEICVm+zc=
+			guQ8QTUTCS72j9eQw0R6lNWwfLjxO4IbH5WRPA+mtGM=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64.swiftdoc</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MlFRT/u3mqw7IV9KGbz6RlGYZnGTKJ/RJfcEICVm+zc=
+			guQ8QTUTCS72j9eQw0R6lNWwfLjxO4IbH5WRPA+mtGM=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XXmrHimBjp+WSKqu/zfBC34rIj6uPMUl4HWaanzB/VM=
+			5Tm/j05VLGmHBQ/OnCWpy4EmGxdI2ja40parTRoojoA=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XXmrHimBjp+WSKqu/zfBC34rIj6uPMUl4HWaanzB/VM=
+			5Tm/j05VLGmHBQ/OnCWpy4EmGxdI2ja40parTRoojoA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
