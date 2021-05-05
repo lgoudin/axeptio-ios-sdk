@@ -129,7 +129,7 @@ If your app supports multiple languages you probably have created a different ve
 
 #### token
 
-The `token` porperty can be used to set a custom token. By default, a random identifier is set.
+The `token` property can be used to set a custom token. By default, a random identifier is set.
 
 ### Methods
 
