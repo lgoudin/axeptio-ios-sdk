@@ -131,6 +131,8 @@ If your app supports multiple languages you probably have created a different ve
 
 The `token` property can be used to set a custom token. By default, a random identifier is set.
 
+This property is particularly useful for apps using webviews. By opening the webview while passing the token in the `axeptio_token` querystring parameter, the consent previously given in the app will be reused on the website if it uses the web SDK.
+
 ### Methods
 
 #### initialize
