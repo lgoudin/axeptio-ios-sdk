@@ -8,6 +8,10 @@ import SafariServices
 import Swift
 import UIKit
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Axeptio) public class AxeptioObjCWrapper : ObjectiveC.NSObject {
+  @objc public static var token: Swift.String {
+    @objc get
+    @objc set
+  }
   @objc public static func initialize(clientId: Swift.String, version: Swift.String, completionHandler: @escaping (Swift.Error?) -> Swift.Void)
   @objc public static func hasUserConsent(forVendor name: Swift.String) -> Swift.Bool
   @objc public static func getUserConsent(forVendor name: Swift.String) -> Swift.Bool

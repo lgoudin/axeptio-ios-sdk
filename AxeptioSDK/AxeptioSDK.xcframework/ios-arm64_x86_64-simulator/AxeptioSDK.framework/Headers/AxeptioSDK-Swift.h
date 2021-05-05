@@ -216,6 +216,9 @@ SWIFT_CLASS_NAMED("AxeptioObjCWrapper")
 @interface Axeptio : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull token;)
++ (NSString * _Nonnull)token SWIFT_WARN_UNUSED_RESULT;
++ (void)setToken:(NSString * _Nonnull)newValue;
 + (void)initializeWithClientId:(NSString * _Nonnull)clientId version:(NSString * _Nonnull)version completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 + (BOOL)hasUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)getUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
@@ -450,6 +453,9 @@ SWIFT_CLASS_NAMED("AxeptioObjCWrapper")
 @interface Axeptio : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull token;)
++ (NSString * _Nonnull)token SWIFT_WARN_UNUSED_RESULT;
++ (void)setToken:(NSString * _Nonnull)newValue;
 + (void)initializeWithClientId:(NSString * _Nonnull)clientId version:(NSString * _Nonnull)version completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 + (BOOL)hasUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)getUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
