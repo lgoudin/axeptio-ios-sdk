@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AxeptioSDK
 import Foundation
 import KeychainSwift
@@ -35,11 +35,12 @@ extension URLSession {
     case networkFailed
     case apiFailed
     public static func == (a: AxeptioSDK.Axeptio.Error, b: AxeptioSDK.Axeptio.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
+  final public var token: Swift.String
   final public func initialize(clientId: Swift.String, version: Swift.String, completionHandler: @escaping (AxeptioSDK.Axeptio.Error?) -> Swift.Void)
   final public func getUserConsent(forVendor name: Swift.String) -> Swift.Bool?
   final public func clearUserConsents()
