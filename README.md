@@ -4,6 +4,10 @@
 
 User consent is not only limited to the Web but applies to all platforms collecting user data. Mobile devices are part of it.
 
+## Requirements
+
+Minimum iOS version: **11.x**
+
 ## Installation
 
 1. If you haven’t already, install the latest version of [CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation).
