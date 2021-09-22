@@ -165,6 +165,10 @@ The `getUserConsent` function returns an optional boolean indicating if the user
 func getUserConsent(forVendor name: String) -> Bool?
 ```
 
+#### setUserConsentToDisagreeWithAll
+
+The `setUserConsentToDisagreeWithAll` function sets the consent for all vendors to false and saves the preference. This function is useful when using the App Tracking Transparency. If a user denies the tracking authorization request, call this function so that the CMP is not displayed and the consent of the user is saved in the Axeptio consent registry.
+
 ## Author
 
 Axeptio
