@@ -16,6 +16,7 @@ import UIKit
   @objc public static func hasUserConsent(forVendor name: Swift.String) -> Swift.Bool
   @objc public static func getUserConsent(forVendor name: Swift.String) -> Swift.Bool
   @objc public static func clearUserConsents()
+  @objc public static func setUserConsentToDisagreeWithAll()
   @discardableResult
   @objc public static func showConsentController(initialStepIndex: Swift.Int = 0, onlyFirstTime: Swift.Bool = true, in viewController: UIKit.UIViewController, animated: Swift.Bool = true, completionHandler: @escaping (Swift.Error?) -> Swift.Void) -> (() -> Swift.Void)?
   @objc deinit
@@ -47,7 +48,9 @@ extension URLSession {
   final public var token: Swift.String
   final public func initialize(clientId: Swift.String, version: Swift.String, completionHandler: @escaping (AxeptioSDK.Axeptio.Error?) -> Swift.Void)
   final public func getUserConsent(forVendor name: Swift.String) -> Swift.Bool?
+  final public func getVendors() -> [Swift.String]
   final public func clearUserConsents()
+  final public func setUserConsentToDisagreeWithAll()
   @discardableResult
   final public func showConsentController(initialStepIndex: Swift.Int = 0, onlyFirstTime: Swift.Bool = true, in viewController: UIKit.UIViewController, animated: Swift.Bool = true, completionHandler: @escaping (AxeptioSDK.Axeptio.Error?) -> Swift.Void) -> (() -> Swift.Void)?
   @objc deinit

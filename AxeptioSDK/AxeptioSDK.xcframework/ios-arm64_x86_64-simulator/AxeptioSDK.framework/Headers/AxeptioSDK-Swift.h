@@ -221,6 +221,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull toke
 + (BOOL)hasUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)getUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 + (void)clearUserConsents;
++ (void)setUserConsentToDisagreeWithAll;
 + (void (^ _Nullable)(void))showConsentControllerWithInitialStepIndex:(NSInteger)initialStepIndex onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 @end
 
@@ -456,6 +457,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull toke
 + (BOOL)hasUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)getUserConsentForVendor:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 + (void)clearUserConsents;
++ (void)setUserConsentToDisagreeWithAll;
 + (void (^ _Nullable)(void))showConsentControllerWithInitialStepIndex:(NSInteger)initialStepIndex onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 @end
 
