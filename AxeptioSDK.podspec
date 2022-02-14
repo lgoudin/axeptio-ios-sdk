@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AxeptioSDK'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'Axeptio SDK for presenting cookies consent to the user'
 
 # This description is used to generate tags and improve search results.
@@ -21,17 +21,17 @@ Pod::Spec.new do |s|
   Axeptio SDK for presenting cookies consent to the user
                        DESC
 
-  s.homepage         = 'https://github.com/agilitation/axeptio-ios-sdk'
+  s.homepage         = 'https://github.com/axeptio/axeptio-ios-sdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Axeptio' => 'support@axeptio.eu' }
-  s.source           = { :git => 'https://github.com/agilitation/axeptio-ios-sdk.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:axeptio/axeptio-ios-sdk.git', :tag => s.version.to_s }
 
   s.swift_version = '5.0'
   s.ios.deployment_target = '11.0'
 
   s.preserve_paths = 'AxeptioSDK/AxeptioSDK.xcframework'
   s.vendored_frameworks = 'AxeptioSDK/AxeptioSDK.xcframework'
-  
+
   s.frameworks = 'UIKit'
   s.dependency 'KeychainSwift'
   s.dependency 'Kingfisher'

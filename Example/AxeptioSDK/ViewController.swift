@@ -9,10 +9,16 @@
 import UIKit
 import AxeptioSDK
 
+
+
 class ViewController: UIViewController {
+    
+    let yourClientId = "6058635aa6a92469bed037b0"
+    let yourVersion = "ga_fb"
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		Axeptio.shared.initialize(clientId: "<Replace with your client ID>", version: "<Replace with your version>") { [weak self] error in
+		Axeptio.shared.initialize(clientId: yourClientId, version: yourVersion) { [weak self] error in
 			guard self != nil && error == nil else {
 				return
 			}
