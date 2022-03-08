@@ -1,6 +1,6 @@
 {
   "name": "AxeptioSDK",
-  "version": "0.3.1",
+  "version": "0.3.3",
   "summary": "Axeptio SDK for presenting cookies consent to the user",
   "description": "Axeptio SDK for presenting cookies consent to the user",
   "homepage": "https://github.com/axeptio/axeptio-ios-sdk",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:axeptio/axeptio-ios-sdk.git",
-    "tag": "0.3.1"
+    "tag": "0.3.3"
   },
   "swift_versions": "5.0",
   "platforms": {

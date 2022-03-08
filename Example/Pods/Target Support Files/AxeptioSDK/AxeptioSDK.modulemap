@@ -1,6 +1,0 @@
-framework module AxeptioSDK {
-  umbrella header "AxeptioSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

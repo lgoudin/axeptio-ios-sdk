@@ -1,14 +1,14 @@
 //
 //  AppDelegate.swift
-//  AxeptioSDK
+//  Test
 //
-//  Created by Axeptio on 02/26/2021.
-//  Copyright (c) 2021 Axeptio. All rights reserved.
+//  Created by Cyril Anger on 02/03/2021.
+//  Copyright © 2021 Axeptio. All rights reserved.
 //
 
 import UIKit
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 	var window: UIWindow?
 	
