@@ -7,6 +7,7 @@ User consent is not only limited to the Web but applies to all platforms collect
 ## Requirements
 
 Minimum iOS version: **12.x**
+
 Better with xCode 13.x.x
 
 ## Installation
