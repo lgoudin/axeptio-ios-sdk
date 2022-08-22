@@ -6,67 +6,59 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		eom/3FIjxSQVsijgvqAERuUz8KA=
+		Gxv0zsIpg1/bUI5emLyx9gyD3f0=
+		</data>
+		<key>AxeptioSDK.podspec</key>
+		<data>
+		QOPi1LGU6bBknqaHS2EJezw2JQQ=
 		</data>
 		<key>Headers/AxeptioSDK-Swift.h</key>
 		<data>
-		brYI0p5/m5wUhiypsFFdea9FABQ=
+		4XCKzyGnJUpekEw65IRmYUeRkBk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IuVQFKgitvaFr5BNwIUQQMvqfUo=
+		8j0+GKGJFoMFITxQsy25xquIE6I=
+		</data>
+		<key>LICENSE</key>
+		<data>
+		7SxYja4hiLcH4w49suQuokoBsz0=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		cAYvucI7j5PUGCo4LsaDBREMV2U=
+		C/ozPGRghicFs1hHOPGEeFDo3e4=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ev51A3nDwF3Bjpt+pNhTyXy9upc=
+		/hEvQRVt1kFMueLEJtMZ0dHB/wQ=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		p1eDHImtxivrjvtbF1eUtZBWdH8=
-		</data>
-		<key>Modules/AxeptioSDK.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		cAYvucI7j5PUGCo4LsaDBREMV2U=
-		</data>
-		<key>Modules/AxeptioSDK.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		ev51A3nDwF3Bjpt+pNhTyXy9upc=
-		</data>
-		<key>Modules/AxeptioSDK.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		p1eDHImtxivrjvtbF1eUtZBWdH8=
+		IgRVcTUdlVNb3XcJ3XFvSUf355w=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GFt1jvqyj1ru4I0twUBKTS0rl1A=
+		0406aEJXHEZ6BUf/zZCITWCFQpg=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DkQxxfT+NFgWU+BhEiJGQpPxP9o=
+		A+1hqRTG9rduuKu+fB8KePZDKZM=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nrILGZQMQvJPnBzUdud5arVUSyU=
-		</data>
-		<key>Modules/AxeptioSDK.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		GFt1jvqyj1ru4I0twUBKTS0rl1A=
-		</data>
-		<key>Modules/AxeptioSDK.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		DkQxxfT+NFgWU+BhEiJGQpPxP9o=
-		</data>
-		<key>Modules/AxeptioSDK.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		nrILGZQMQvJPnBzUdud5arVUSyU=
+		U/GmPqw6kgTtk/W3LE7yGpwZ2pQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		2DTmyIM8zqtlOjTHarTuv8LjsI4=
+		</data>
+		<key>Podfile</key>
+		<data>
+		avVGHJpnhF9XFcSkqsepT1qYquY=
+		</data>
+		<key>Podfile.lock</key>
+		<data>
+		N2U1zvOG8xAdZuHr/E546tBD2no=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,98 +67,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ItiMg77BXIHhlkGwQU4MCsLEfH8zDzy+8xZS7uQGFn0=
+			ISPASQryrnylrLonky4Pqik9I+LfFWxZlYXYCZGlT0U=
+			</data>
+		</dict>
+		<key>AxeptioSDK.podspec</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			V0RCOnNfUHvZ7OTx4yYnxiOeWFm6HXLhUC66dGL0qd0=
 			</data>
 		</dict>
 		<key>Headers/AxeptioSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			96s4JIvrkP24zLlbnRcGbIrrx6B/TNPlD2NR+Wc73Hk=
+			Nv/iMCjW6P84HuSlhNu9sZaqTVQM0YWFJA6xLxD3nY4=
+			</data>
+		</dict>
+		<key>LICENSE</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jcruW8PeFnIGHlR1/k+TXDQxO0R1kildZRwC3Z5IG3Q=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fiJA1Dj9f+7+GlzQfvqV+MFCRmcPcHj9219uXRWSzi8=
+			Tj76yQDvcMSjK6JOJe+tyMxrWMj5qny7uYDse0++hTc=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ipMEK6zTuBLLJh6amphhDUJWgnkhEvHfXhHhKvlr8HI=
+			R2mCBbYsncbCXrTbxRhvufP5ftdrZWFbnC/5frFrmWY=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v9BEZvl6nZxiM7AITnbzZs2nL+BpO2+Mm/rsK8lnenc=
-			</data>
-		</dict>
-		<key>Modules/AxeptioSDK.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fiJA1Dj9f+7+GlzQfvqV+MFCRmcPcHj9219uXRWSzi8=
-			</data>
-		</dict>
-		<key>Modules/AxeptioSDK.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ipMEK6zTuBLLJh6amphhDUJWgnkhEvHfXhHhKvlr8HI=
-			</data>
-		</dict>
-		<key>Modules/AxeptioSDK.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			v9BEZvl6nZxiM7AITnbzZs2nL+BpO2+Mm/rsK8lnenc=
+			0zCCaYwwzThl3WM+PMjijJjZ7Qw9yD3Xn6BUG3vih0U=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xLHx5HeWXHpiYTvK9kJEgcIuRAxUs4m/ZlS4HFiyMtM=
+			Is5mtKk+MjNb9/PjLy4fckIQvpSA8e/L8YYKGOXooDY=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gaPSTHhJ0iJL3r16lv92iZkDNsyVJhHyS8wfwp2A57g=
+			3U5g3bynB8KeTQip6+JrLnjDEDHnksFcXq7skiZhEDs=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/d2dALFZnXtWgs9DzdjnCKTsbRRJipG5QI2dtEGBHmY=
-			</data>
-		</dict>
-		<key>Modules/AxeptioSDK.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xLHx5HeWXHpiYTvK9kJEgcIuRAxUs4m/ZlS4HFiyMtM=
-			</data>
-		</dict>
-		<key>Modules/AxeptioSDK.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gaPSTHhJ0iJL3r16lv92iZkDNsyVJhHyS8wfwp2A57g=
-			</data>
-		</dict>
-		<key>Modules/AxeptioSDK.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/d2dALFZnXtWgs9DzdjnCKTsbRRJipG5QI2dtEGBHmY=
+			dUmucl4TVcmyRk/bvWMEzFdWtz9uRseerpXTsAJ7tzY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -174,6 +138,20 @@
 			<key>hash2</key>
 			<data>
 			BJQPdZTa6AOKyNpTaVCsYOK4IKqY8gF2aKNLjjUa3NA=
+			</data>
+		</dict>
+		<key>Podfile</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8dpD2LRwTdQzW6WJiZlWiG/iNuxFEvZRaMO3RN5TLm4=
+			</data>
+		</dict>
+		<key>Podfile.lock</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TAcDSBii/krL0DySoUVQEiScFF8TQvni8tR6L4RIvBc=
 			</data>
 		</dict>
 	</dict>
