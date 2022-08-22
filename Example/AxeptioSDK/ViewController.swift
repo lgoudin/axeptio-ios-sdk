@@ -13,8 +13,8 @@ import AxeptioSDK
 
 class ViewController: UIViewController {
     
-    let yourClientId = "your client id"
-    let yourVersion = "your version"
+    //let yourClientId = "your client id"
+    //let yourVersion = "your version"
 
 	private var dismissHandler: (() -> Void)?
 	

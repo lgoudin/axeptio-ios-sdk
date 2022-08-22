@@ -6,7 +6,7 @@ User consent is not only limited to the Web but applies to all platforms collect
 
 ## Requirements
 
-Minimum iOS version: **11.x**
+Minimum iOS version: **12.x**
 
 ## Installation
 
@@ -22,7 +22,7 @@ pod init
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '11.0'
+platform :ios, '12.0'
 use_frameworks!
 
 target 'MyApp' do
