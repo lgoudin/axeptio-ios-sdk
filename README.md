@@ -8,7 +8,7 @@ User consent is not only limited to the Web but applies to all platforms collect
 
 Minimum iOS version: **12.x**
 
-Better with xCode 13.x.x
+Better with xCode **13.x.x**
 
 ## Installation
 
@@ -180,11 +180,11 @@ Axeptio
 AxeptioSDK is available under the MIT license. See the LICENSE file for more info.
 
 ## Improvments
-0.3.3
+**0.3.3**
 
 	[AXE-665] fix crash when one or more H, S B values are missing in the paintT ransfrom JSON Item
 	
-0.3.4
+**0.3.4**
 
  	[UX Improvements] - reduce left and right horizontal insets to provide a better width
 	
