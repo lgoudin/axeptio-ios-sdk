@@ -84,8 +84,6 @@ class ViewController: UIViewController {
             }
         }
     }
-
-
 }
 ```
 
@@ -120,7 +118,6 @@ If your app supports multiple languages you probably have created a different ve
             } else {
                 // Enable collection
             }
-
         }];
     }];
 }
@@ -180,12 +177,19 @@ Axeptio
 AxeptioSDK is available under the MIT license. See the LICENSE file for more info.
 
 ## Improvments
-**0.3.3**
 
-	[AXE-665] fix crash when one or more H, S B values are missing in the paintT ransfrom JSON Item
+#### **0.3.1**
+- iOS 11
+- xCode 11
+####  **0.3.3**
+- iOS 11 
+- xCode 11
+- fixes 
+	- [AXE-665] fix crash when one or more H, S B values are missing in the paintT ransfrom JSON Item
 	
-**0.3.4**
-
- 	[UX Improvements] - reduce left and right horizontal insets to provide a better width
-	
- 	[fixes AXE-1601] - in cookie, vendor, the domain turns out to be optional and not mandatory
+####  **0.3.4**
+ - iOS 12
+ - xCode 13
+ - fixes
+ 	- [UX Improvements] - reduce left and right horizontal insets to provide a better width
+	- [fixes AXE-1601] - in cookie, vendor, the domain turns out to be optional and not mandatory
