@@ -1,4 +1,4 @@
-# Axeptio SDK
+# Axeptio SDK @0.3.4
 
 ## Introduction
 
@@ -182,8 +182,8 @@ AxeptioSDK is available under the MIT license. See the LICENSE file for more inf
 - iOS 11
 - xCode 11
 ####  **0.3.3**
-- iOS 11 
-- xCode 11
+- iOS 12 
+- xCode 12
 - fixes 
 	- [AXE-665] fix crash when one or more H, S B values are missing in the paintT ransfrom JSON Item
 	
