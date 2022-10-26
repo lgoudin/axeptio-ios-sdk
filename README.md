@@ -1,8 +1,16 @@
-# Axeptio SDK @0.3.4
-
-## Introduction
+# Introduction
 
 User consent is not only limited to the Web but applies to all platforms collecting user data. Mobile devices are part of it.
+
+# Current Release : AxeptioSDK @0.3.4
+
+## Author
+
+Axeptio
+
+## License
+
+AxeptioSDK is available under the MIT license. See the LICENSE file for more info.
 
 ## Requirements
 
@@ -10,17 +18,38 @@ Minimum iOS version: **12.x**
 
 Better with xCode **13.x.x**
 
-## Installation
+## Improvments
 
-1. If you haven’t already, install the latest version of [CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation).
+#### **0.3.1**
+- iOS 11
+- xCode 11
 
-2. If you don’t have an existing Podfile, create a new one by running the command:
+####  **0.3.3**
+- iOS 12 
+- xCode 12
+- fixes 
+	- [AXE-665] fix crash when one or more H, S B values are missing in the paintT ransfrom JSON Item
+	
+####  **0.3.4**
+ - iOS 12
+ - xCode 13
+ - fixes
+ 	- [UX Improvements] - reduce left and right horizontal insets to provide a better width
+	- [fixes AXE-1601] - in cookie, vendor, the domain turns out to be optional and not mandatory
+
+
+
+# Installation
+
+### 1. If you haven’t already, install the latest version of [CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation).
+
+### 2. If you don’t have an existing Podfile, create a new one by running the command:
 
 ```bash
-pod init
+pod Init
 ```
 
-3. Add `pod 'AxeptioSDK'` to your Podfile:
+### 3. Add `pod 'AxeptioSDK'` to your Podfile:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
@@ -40,21 +69,33 @@ post_install do |installer|
 end
 ```
 
-4. Run the following command:
+### 4. Run the following command:
 
 ```bash
 pod install
 ```
 
-5. In the future, to update the SDK to its latest version, run the command:
+### 5. In the future, to update the SDK to its latest version, run the command:
 
 ```bash
 pod update AxeptioSDK
 ```
 
-## Getting started
+```bash
+pod update
+```
 
-### Swift
+### 6. if for some reasons you wan't to clean up your projects from cocoapods stuff
+```bash
+pod deintegrate
+```
+
+##### Remark
+- by simply removing files ( Podfile, Podfile.lock, xcworkspace file ( package folder indeed) and Pods Folder, you are not removing the change that were made inside the setting of your xcode project file
+
+# Getting started
+
+## Swift
 
 In the main controller of your app, import the `AxeptioSDK` module, initialize the SDK by calling the `initialize` method providing a `clientId` and a `version`. Once the initialization is completed, you can make the widget appear by calling the `showConsentController` method.
 
@@ -89,7 +130,7 @@ class ViewController: UIViewController {
 
 If your app supports multiple languages you probably have created a different version for each of the language in Axeptio's [admin web page](https://admin.axeptio.eu). In this case you can store the version for each language in `Localizable.strings` file and use `NSLocalizedString` to get the appropriate version for the user.
 
-### Objective-C
+## Objective-C
 
 ```objective-c
 #import "ViewController.h"
@@ -168,29 +209,26 @@ func getUserConsent(forVendor name: String) -> Bool?
 
 The `setUserConsentToDisagreeWithAll` function sets the consent for all vendors to false and saves the preference. This function is useful when using the App Tracking Transparency. If a user denies the tracking authorization request, call this function so that the CMP is not displayed and the consent of the user is saved in the Axeptio consent registry.
 
-## Author
 
-Axeptio
+# References
 
-## License
-
-AxeptioSDK is available under the MIT license. See the LICENSE file for more info.
-
-## Improvments
-
-#### **0.3.1**
-- iOS 11
-- xCode 11
-
-####  **0.3.3**
-- iOS 12 
-- xCode 12
-- fixes 
-	- [AXE-665] fix crash when one or more H, S B values are missing in the paintT ransfrom JSON Item
-	
-####  **0.3.4**
- - iOS 12
- - xCode 13
- - fixes
- 	- [UX Improvements] - reduce left and right horizontal insets to provide a better width
-	- [fixes AXE-1601] - in cookie, vendor, the domain turns out to be optional and not mandatory
+- CocoaPods
+  - https://cocoapods.org
+- All CocoaPods' Guide
+  - https://guides.cocoapods.org
+- Installing CocoaPods with Homebrew
+  - https://formulae.brew.sh/formula/cocoapods
+- Getting started
+  - https://guides.cocoapods.org/using/getting-started.html
+- using CocoaPods
+  - https://guides.cocoapods.org/using/using-cocoapods.html
+- pod install vs pod update
+  - https://guides.cocoapods.org/using/pod-install-vs-update.html
+- CocoaPods Command Line reference
+  - https://guides.cocoapods.org/terminal/commands.html
+- What is a Podfile ?
+  - https://guides.cocoapods.org/using/the-podfile.html
+- Podfile syntax reference
+  - https://guides.cocoapods.org/syntax/podfile.html
+- How to remove CocoaPods from Xcode Project ?
+  - https://medium.com/app-makers/how-to-remove-cocoapods-from-xcode-project-5166c19152
