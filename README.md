@@ -1,6 +1,6 @@
 # Introduction
 
-User consent is not only limited to the Web but applies to all platforms collecting user data. Mobile devices are part of it.
+User consent is not limited to the web, but applies to all platforms that collect user data. This includes mobile devices.
 
 # Current Release : AxeptioSDK @0.3.4
 
@@ -10,7 +10,7 @@ Axeptio
 
 ## License
 
-AxeptioSDK is available under the MIT license. See the LICENSE file for more info.
+AxeptioSDK is available under the MIT license. See the LICENSE file for more information.
 
 ## Requirements
 
@@ -85,19 +85,19 @@ pod update AxeptioSDK
 pod update
 ```
 
-### 6. if for some reasons you wan't to clean up your projects from cocoapods stuff
+### 6. Cleaning up your project from everything related to CocoaPods
 ```bash
 pod deintegrate
 ```
 
 ##### Remark
-- by simply removing files ( Podfile, Podfile.lock, xcworkspace file ( package folder indeed) and Pods Folder, you are not removing the change that were made inside the setting of your xcode project file
+- by simply deleting the files (Podfile, Podfile.lock, xcworkspace file (package folder in fact) and Pods Folder, you do not delete the change that was made in your xCode project file settings
 
 # Getting started
 
 ## Swift
 
-In the main controller of your app, import the `AxeptioSDK` module, initialize the SDK by calling the `initialize` method providing a `clientId` and a `version`. Once the initialization is completed, you can make the widget appear by calling the `showConsentController` method.
+In the main controller of your applmication, import the `AxeptioSDK` module, initialize the SDK by calling the `initialize` method providing a `clientId` and a `version`. Once initialization is complete, you can make the widget appear by calling the `showConsentController` method.
 
 ```swift
 import UIKit
@@ -128,7 +128,7 @@ class ViewController: UIViewController {
 }
 ```
 
-If your app supports multiple languages you probably have created a different version for each of the language in Axeptio's [admin web page](https://admin.axeptio.eu). In this case you can store the version for each language in `Localizable.strings` file and use `NSLocalizedString` to get the appropriate version for the user.
+If your application supports multiple languages, you have probably created a different version for each of them in the Axeptio [administration web page] (https://admin.axeptio.eu). In this case you can store the version for each language in the `Localizable.strings` file and use `NSLocalizedString` to get the appropriate version for the user.
 
 ## Objective-C
 
@@ -169,6 +169,10 @@ If your app supports multiple languages you probably have created a different ve
 
 ## API Reference
 
+### Apple Tracking User Data permission
+- https://developer.apple.com/app-store/user-privacy-and-data-use/
+
+
 ### Properties
 
 #### token
@@ -195,7 +199,7 @@ The `showConsentController` function shows Axeptio's widget to the user in a giv
 func showConsentController(initialStepIndex: Int = 0, onlyFirstTime: Bool = true, in viewController: UIViewController, animated: Bool = true, completionHandler: @escaping (Error?) -> Void) -> (() -> Void)?
 ```
 
-If the widget is shown the function returns a dismiss handler that you can call to hide the widget should you need it. Otherwise returns nil.
+If the widget is displayed, the function returns a reject handler that you can call to hide the widget if necessary. Otherwise, it returns nil.
 
 #### getUserConsent
 
@@ -207,7 +211,7 @@ func getUserConsent(forVendor name: String) -> Bool?
 
 #### setUserConsentToDisagreeWithAll
 
-The `setUserConsentToDisagreeWithAll` function sets the consent for all vendors to false and saves the preference. This function is useful when using the App Tracking Transparency. If a user denies the tracking authorization request, call this function so that the CMP is not displayed and the consent of the user is saved in the Axeptio consent registry.
+The `setUserConsentToDisagreeWithAll` function sets consent for all vendors to false and saves the preference. This function is useful when using application tracking transparency. If a user refuses the tracking permission request, call this function to have the CMP not displayed and the user's consent saved in the Axeptio consent log.
 
 
 # References
@@ -220,7 +224,7 @@ The `setUserConsentToDisagreeWithAll` function sets the consent for all vendors 
   - https://formulae.brew.sh/formula/cocoapods
 - Getting started
   - https://guides.cocoapods.org/using/getting-started.html
-- using CocoaPods
+- Using CocoaPods
   - https://guides.cocoapods.org/using/using-cocoapods.html
 - pod install vs pod update
   - https://guides.cocoapods.org/using/pod-install-vs-update.html
