@@ -1,9 +1,9 @@
 PODS:
-  - AxeptioSDK (0.3.4):
+  - AxeptioSDK (0.3.5):
     - KeychainSwift
     - Kingfisher
   - KeychainSwift (20.0.0)
-  - Kingfisher (7.3.2)
+  - Kingfisher (7.4.1)
 
 DEPENDENCIES:
   - AxeptioSDK (from `../`)
@@ -18,9 +18,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AxeptioSDK: 63df1144b6762e9a9b4314aa93928a1beff77de3
+  AxeptioSDK: 48b6a4d6a065c37c8cd7a4b9e71f3132530f771a
   KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
-  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
 
 PODFILE CHECKSUM: 46661b4421888d68b9f0276987ecec3dec256997
 

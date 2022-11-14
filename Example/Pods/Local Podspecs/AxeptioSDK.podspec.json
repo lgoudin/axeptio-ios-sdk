@@ -1,6 +1,6 @@
 {
   "name": "AxeptioSDK",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "summary": "Axeptio SDK for presenting cookies consent to the user",
   "description": "Axeptio SDK for presenting cookies consent to the user using a simple Swift API,  accessible from both Objective C and swift projects",
   "homepage": "https://github.com/axeptio/axeptio-ios-sdk",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:axeptio/axeptio-ios-sdk.git",
-    "tag": "0.3.4"
+    "tag": "0.3.5"
   },
   "swift_versions": "5.0",
   "platforms": {
