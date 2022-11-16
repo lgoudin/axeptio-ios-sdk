@@ -2,7 +2,7 @@
 
 User consent is not limited to the web, but applies to all platforms that collect user data. This includes mobile devices.
 
-# Current Release : AxeptioSDK @0.3.4
+# Current Release : AxeptioSDK @0.3.6
 
 ## Author
 
@@ -16,7 +16,7 @@ AxeptioSDK is available under the MIT license. See the LICENSE file for more inf
 
 Minimum iOS version: **12.x**
 
-Better with xCode **13.x.x**
+Better with xCode **14.x.x**
 
 ## Improvments
 
@@ -37,7 +37,14 @@ Better with xCode **13.x.x**
  	- [UX Improvements] - reduce left and right horizontal insets to provide a better width
 	- [fixes AXE-1601] - in cookie, vendor, the domain turns out to be optional and not mandatory
 
-
+####  **0.3.6**
+ - iOS 12
+ - xCode 14
+ - fixes
+ 	 - remove unnecessary files that prevented publishing something on the App Store
+	the signing process failed to sign them.
+	these files were added by mistake 
+	
 
 # Installation
 
