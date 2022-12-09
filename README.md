@@ -200,10 +200,28 @@ This property is particularly useful for apps using webviews. By opening the web
 
 #### initialize
 
-The `initialize` function initializes the SDK by fetching the configuration and calling the completion handler when done. If it fails (because of network for example) it is OK to call the `initialize` function again.
+The `initialize` function initializes the SDK by fetching the configuration and calling the completion handler when finished. 
+
+If this fails, because of the network for example, it is possible to call the `initialize` function again, unless the error is Already Initialized.
+
+If you need to reset the Axeptio SDK for a different project id for the same client id or change both you should call the revere function
 
 ```swift
 func initialize(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
+```
+
+#### rerere (reset)
+
+The `rerere` function resets the SDK by fetching the configuration and calling the completion handler when finished in the same way as `initialize` function described above.
+
+The main difference is that the call to `reset` first releases everything that has been loaded for the current Client Id and Project Id, then reloads the data for the new Client Id and Project Id. 
+
+Most of the time this should be related to using another version of the project for the same Client Id - both can change.
+
+The name `rerere` comes from the `git rerere` function involved in resolving the same conflicts over and over again until the subject branches are done.
+
+```swift
+func rerere(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
 ```
 
 #### showConsentController
