@@ -2,7 +2,7 @@
 
 User consent is not limited to the web, but applies to all platforms that collect user data. This includes mobile devices.
 
-# Current Release : AxeptioSDK @0.3.6
+# Current Release : AxeptioSDK @0.4.0
 
 ## Author
 
@@ -44,7 +44,15 @@ Better with xCode **14.x.x**
  	 - remove unnecessary files that prevented publishing something on the App Store
 	the signing process failed to sign them.
 	these files were added by mistake 
-	
+ 
+ ####  **0.4.0**
+ - iOS 12
+ - xCode 14
+ - fixes
+    - layout management , info layout was not managed
+    - add a rerere api to reinitialise the SDK with a new Client ID and version project id
+    - update test app accordingly to demo the  rerere feature swapping in between two client id and version (hardcoded))
+
 
 # Installation
 

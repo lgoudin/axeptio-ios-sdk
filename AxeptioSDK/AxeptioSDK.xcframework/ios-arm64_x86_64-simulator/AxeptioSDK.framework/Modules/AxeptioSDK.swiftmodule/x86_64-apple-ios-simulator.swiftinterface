@@ -22,6 +22,7 @@ import _StringProcessing
   @objc public static func setUserConsentToDisagreeWithAll()
   @discardableResult
   @objc public static func showConsentController(initialStepIndex: Int = 0, onlyFirstTime: Bool = true, in viewController: UIViewController, animated: Bool = true, completionHandler: @escaping (Error?) -> Void) -> (() -> Void)?
+  @objc public static func rerere(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
   @objc deinit
 }
 extension URLSession {
@@ -56,6 +57,7 @@ extension URLSession {
   final public func setUserConsentToDisagreeWithAll()
   @discardableResult
   final public func showConsentController(initialStepIndex: Int = 0, onlyFirstTime: Bool = true, in viewController: UIViewController, animated: Bool = true, completionHandler: @escaping (Error?) -> Void) -> (() -> Void)?
+  final public func rerere(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
   @objc deinit
 }
 extension AxeptioSDK.Axeptio.Error : Swift.Equatable {}

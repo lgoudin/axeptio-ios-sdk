@@ -267,6 +267,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull toke
 + (void)clearUserConsents;
 + (void)setUserConsentToDisagreeWithAll;
 + (void (^ _Nullable)(void))showConsentControllerWithInitialStepIndex:(NSInteger)initialStepIndex onlyFirstTime:(BOOL)onlyFirstTime in:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
++ (void)rerereWithClientId:(NSString * _Nonnull)clientId version:(NSString * _Nonnull)version completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 @end
 
 
