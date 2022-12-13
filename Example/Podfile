@@ -2,10 +2,10 @@ use_frameworks!
 
 platform :ios, '12.0'
 
-target 'AxeptioSDK_Example' do
+target 'AxeptioSDK_Example_App' do
   pod 'AxeptioSDK', :path => '../'
 
-  target 'AxeptioSDK_Tests' do
+  target 'AxeptioSDK_Example_Tests' do
     inherit! :search_paths
   end
 end
