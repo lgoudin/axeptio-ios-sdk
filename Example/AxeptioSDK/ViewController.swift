@@ -10,29 +10,11 @@ import UIKit
 import AppTrackingTransparency
 import AxeptioSDK
 
-let axeptioId = "624d5e22e4776e1f019014e2"
-let axeptioVersionFr = "axeptio-prod-fr"
-let axeptioVersionEn: String = "axeptio-prod-en"
-
-
-let demoId: String = "637f77ebb38394b040ab643e"
-let demoVersionEn: String = "test-en"
-let demoVersionfr: String = "test-fr"
-
-let basicId = "6058635aa6a92469bed037b0"
-let basicVersion = "ga_fb"
-
-
-
-
 
 class ViewController: UIViewController {
     
-    var yourClientId = demoId
-    var yourVersion = demoVersionEn
-
-    //var yourClientId = "your client id"
-    //var yourVersion = "your version"
+    //let yourClientId = "your client id"
+    //let yourVersion = "your version"
 
 	private var dismissHandler: (() -> Void)?
 	
@@ -70,7 +52,7 @@ class ViewController: UIViewController {
 	@IBAction private func showCookiesController(_ sender: Any? = nil) {
 		DispatchQueue.main.async {
 			self.dismissHandler?()
-			self.dismissHandler = Axeptio.shared.showConsentController(onlyFirstTime: false, in: self) { error in
+			self.dismissHandler = Axeptio.shared.showConsentController(onlyFirstTime: sender == nil, in: self) { error in
 				Axeptio.shared.getVendors().forEach { vendor in
 					let result = Axeptio.shared.getUserConsent(forVendor: vendor)
                     print("\(vendor) consent is \(String(describing: result))")
@@ -78,21 +60,4 @@ class ViewController: UIViewController {
 			}
 		}
 	}
-    
-    @IBAction func swapIdentifiers(_ sender: Any) {
-        
-        if (yourClientId == axeptioId) {
-            yourClientId = demoId
-            yourVersion = demoVersionEn
-        } else {
-            yourClientId = axeptioId
-            yourVersion = axeptioVersionFr
-        }
-
-        Axeptio.shared.rerere(clientId: yourClientId, version: yourVersion) { [weak self] error in
-            if (error == nil) {
-                self?.showCookiesController()
-            }
-        }
-    }
 }

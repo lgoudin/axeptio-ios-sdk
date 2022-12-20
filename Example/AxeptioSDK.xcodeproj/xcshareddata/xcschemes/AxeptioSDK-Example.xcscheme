@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1400"
+   LastUpgradeVersion = "0900"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,23 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "AxeptioSDK_Example_App.app"
-               BlueprintName = "AxeptioSDK_Example_App"
-               ReferencedContainer = "container:AxeptioSDK_Example.xcodeproj">
+               BuildableName = "AxeptioSDK_Example.app"
+               BlueprintName = "AxeptioSDK_Example"
+               ReferencedContainer = "container:AxeptioSDK.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "607FACE41AFB9204008FA782"
+               BuildableName = "AxeptioSDK_Tests.xctest"
+               BlueprintName = "AxeptioSDK_Tests"
+               ReferencedContainer = "container:AxeptioSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,21 +41,30 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "AxeptioSDK_Example.app"
+            BlueprintName = "AxeptioSDK_Example"
+            ReferencedContainer = "container:AxeptioSDK.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "AxeptioSDK_Example_Tests.xctest"
-               BlueprintName = "AxeptioSDK_Example_Tests"
-               ReferencedContainer = "container:AxeptioSDK_Example.xcodeproj">
+               BuildableName = "AxeptioSDK_Tests.xctest"
+               BlueprintName = "AxeptioSDK_Tests"
+               ReferencedContainer = "container:AxeptioSDK.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -55,11 +78,18 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AxeptioSDK_Example_App.app"
-            BlueprintName = "AxeptioSDK_Example_App"
-            ReferencedContainer = "container:AxeptioSDK_Example.xcodeproj">
+            BuildableName = "AxeptioSDK_Example.app"
+            BlueprintName = "AxeptioSDK_Example"
+            ReferencedContainer = "container:AxeptioSDK.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "CG_CONTEXT_SHOW_BACKTRACE&#10;&#9;installer.pods_project.targets.each do |target|&#10;&#9;&#9;target.build_configurations.each do |config|&#10;&#9;&#9;&#9;config.build_settings[&apos;BUILD_LIBRARY_FOR_DISTRIBUTION&apos;] = &apos;YES&apos;&#10;&#9;&#9;end&#10;&#9;end&#10;end"
+            value = "YES"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -72,9 +102,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AxeptioSDK_Example_App.app"
-            BlueprintName = "AxeptioSDK_Example_App"
-            ReferencedContainer = "container:AxeptioSDK_Example.xcodeproj">
+            BuildableName = "AxeptioSDK_Example.app"
+            BlueprintName = "AxeptioSDK_Example"
+            ReferencedContainer = "container:AxeptioSDK.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

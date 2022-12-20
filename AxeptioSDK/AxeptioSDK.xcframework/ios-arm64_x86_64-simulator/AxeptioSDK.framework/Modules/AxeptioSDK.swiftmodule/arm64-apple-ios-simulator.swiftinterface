@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AxeptioSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import KeychainSwift
 import Kingfisher
@@ -9,7 +8,6 @@ import SafariServices
 import Swift
 import UIKit
 import _Concurrency
-import _StringProcessing
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Axeptio) public class AxeptioObjCWrapper : NSObject {
   @objc public static var token: String {
     @objc get
@@ -22,7 +20,6 @@ import _StringProcessing
   @objc public static func setUserConsentToDisagreeWithAll()
   @discardableResult
   @objc public static func showConsentController(initialStepIndex: Int = 0, onlyFirstTime: Bool = true, in viewController: UIViewController, animated: Bool = true, completionHandler: @escaping (Error?) -> Void) -> (() -> Void)?
-  @objc public static func rerere(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
   @objc deinit
 }
 extension URLSession {
@@ -57,7 +54,6 @@ extension URLSession {
   final public func setUserConsentToDisagreeWithAll()
   @discardableResult
   final public func showConsentController(initialStepIndex: Int = 0, onlyFirstTime: Bool = true, in viewController: UIViewController, animated: Bool = true, completionHandler: @escaping (Error?) -> Void) -> (() -> Void)?
-  final public func rerere(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
   @objc deinit
 }
 extension AxeptioSDK.Axeptio.Error : Swift.Equatable {}

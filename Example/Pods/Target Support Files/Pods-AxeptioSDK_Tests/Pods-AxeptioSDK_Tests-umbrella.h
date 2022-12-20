@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AxeptioSDK_Example_AppVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AxeptioSDK_Example_AppVersionString[];
+FOUNDATION_EXPORT double Pods_AxeptioSDK_TestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_AxeptioSDK_TestsVersionString[];
 

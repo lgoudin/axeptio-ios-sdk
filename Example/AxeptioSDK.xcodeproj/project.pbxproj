@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E40881980E4257C6492A0CB /* Pods_AxeptioSDK_Example_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C0602D70601A5E0233460B /* Pods_AxeptioSDK_Example_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		8C74C732DF95740D395DC3B1 /* Pods_AxeptioSDK_Example_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EC89DBA2ADF75C36F6BE65 /* Pods_AxeptioSDK_Example_App.framework */; };
+		90DD81201AA82CD5A69573E6 /* Pods_AxeptioSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF2F74A82D09DCD6160C16F /* Pods_AxeptioSDK_Example.framework */; };
+		CEC1B266463B2A4EBD13E99E /* Pods_AxeptioSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6919DDA4253E52638D230BD4 /* Pods_AxeptioSDK_Tests.framework */; };
 		E1327D2727D62531004F96FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1327D1E27D62531004F96FC /* Assets.xcassets */; };
 		E1327D2827D62531004F96FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1327D2027D62531004F96FC /* LaunchScreen.storyboard */; };
 		E1327D2927D62531004F96FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1327D2227D62531004F96FC /* Main.storyboard */; };
@@ -28,23 +28,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02C0602D70601A5E0233460B /* Pods_AxeptioSDK_Example_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AxeptioSDK_Example_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1045ADF71828F85E18B7148F /* Pods-AxeptioSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Tests/Pods-AxeptioSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		10A6548B9799287CDD52DF96 /* Pods-AxeptioSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example/Pods-AxeptioSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		14287D5F00D7DDE58E7D190F /* Pods-AxeptioSDK_Example_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example_App.debug.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example_App/Pods-AxeptioSDK_Example_App.debug.xcconfig"; sourceTree = "<group>"; };
 		3D663C4D36530CC26D0C7A4A /* AxeptioSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AxeptioSDK.podspec; path = ../AxeptioSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		607FACD01AFB9204008FA782 /* AxeptioSDK_Example_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxeptioSDK_Example_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACE51AFB9204008FA782 /* AxeptioSDK_Example_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxeptioSDK_Example_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* AxeptioSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxeptioSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* AxeptioSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxeptioSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6919DDA4253E52638D230BD4 /* Pods_AxeptioSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AxeptioSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA3080F4543AE21B2B74884 /* Pods-AxeptioSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example/Pods-AxeptioSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		81676EB327682CB10FB44C7D /* Pods-AxeptioSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Tests/Pods-AxeptioSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A8EC89DBA2ADF75C36F6BE65 /* Pods_AxeptioSDK_Example_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AxeptioSDK_Example_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE77199035849753190AD3AA /* Pods-AxeptioSDK_Example_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example_Tests/Pods-AxeptioSDK_Example_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BEE393A9F1562BB306AF5539 /* Pods-AxeptioSDK_Example_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example_Tests.release.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example_Tests/Pods-AxeptioSDK_Example_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C593AD526EC6E6F578C5DFF2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CD3AD4DE282F78C5BEC268E6 /* Pods-AxeptioSDK_Example_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example_App.release.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example_App/Pods-AxeptioSDK_Example_App.release.xcconfig"; sourceTree = "<group>"; };
-		DAAAF1E928B421A1005091C6 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DAAAF1E928B421A1005091C6 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		DAAAF1EA28B421BD005091C6 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		E1327D1E27D62531004F96FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1327D2127D62531004F96FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +47,7 @@
 		E1327D2427D62531004F96FC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1327D2527D62531004F96FC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1327D2627D62531004F96FC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFF2F74A82D09DCD6160C16F /* Pods_AxeptioSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AxeptioSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F381667357CEA0DC8C0EE7C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C74C732DF95740D395DC3B1 /* Pods_AxeptioSDK_Example_App.framework in Frameworks */,
+				90DD81201AA82CD5A69573E6 /* Pods_AxeptioSDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E40881980E4257C6492A0CB /* Pods_AxeptioSDK_Example_Tests.framework in Frameworks */,
+				CEC1B266463B2A4EBD13E99E /* Pods_AxeptioSDK_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +88,8 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* AxeptioSDK_Example_App.app */,
-				607FACE51AFB9204008FA782 /* AxeptioSDK_Example_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* AxeptioSDK_Example.app */,
+				607FACE51AFB9204008FA782 /* AxeptioSDK_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,10 +141,6 @@
 				10A6548B9799287CDD52DF96 /* Pods-AxeptioSDK_Example.release.xcconfig */,
 				1045ADF71828F85E18B7148F /* Pods-AxeptioSDK_Tests.debug.xcconfig */,
 				81676EB327682CB10FB44C7D /* Pods-AxeptioSDK_Tests.release.xcconfig */,
-				14287D5F00D7DDE58E7D190F /* Pods-AxeptioSDK_Example_App.debug.xcconfig */,
-				CD3AD4DE282F78C5BEC268E6 /* Pods-AxeptioSDK_Example_App.release.xcconfig */,
-				AE77199035849753190AD3AA /* Pods-AxeptioSDK_Example_Tests.debug.xcconfig */,
-				BEE393A9F1562BB306AF5539 /* Pods-AxeptioSDK_Example_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -156,8 +148,8 @@
 		B0614F6697C47139D3A6E4BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A8EC89DBA2ADF75C36F6BE65 /* Pods_AxeptioSDK_Example_App.framework */,
-				02C0602D70601A5E0233460B /* Pods_AxeptioSDK_Example_Tests.framework */,
+				EFF2F74A82D09DCD6160C16F /* Pods_AxeptioSDK_Example.framework */,
+				6919DDA4253E52638D230BD4 /* Pods_AxeptioSDK_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* AxeptioSDK_Example_App */ = {
+		607FACCF1AFB9204008FA782 /* AxeptioSDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AxeptioSDK_Example_App" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AxeptioSDK_Example" */;
 			buildPhases = (
 				5C548841DFC8967E0FAE35E9 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -196,14 +188,14 @@
 			);
 			dependencies = (
 			);
-			name = AxeptioSDK_Example_App;
+			name = AxeptioSDK_Example;
 			productName = AxeptioSDK;
-			productReference = 607FACD01AFB9204008FA782 /* AxeptioSDK_Example_App.app */;
+			productReference = 607FACD01AFB9204008FA782 /* AxeptioSDK_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* AxeptioSDK_Example_Tests */ = {
+		607FACE41AFB9204008FA782 /* AxeptioSDK_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AxeptioSDK_Example_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AxeptioSDK_Tests" */;
 			buildPhases = (
 				07B912123AA44C82AFC8D892 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -215,9 +207,9 @@
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = AxeptioSDK_Example_Tests;
+			name = AxeptioSDK_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* AxeptioSDK_Example_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* AxeptioSDK_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -232,18 +224,16 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 5DS79WMFEL;
 						LastSwiftMigration = 1250;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 5DS79WMFEL;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AxeptioSDK_Example" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AxeptioSDK" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -257,8 +247,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* AxeptioSDK_Example_App */,
-				607FACE41AFB9204008FA782 /* AxeptioSDK_Example_Tests */,
+				607FACCF1AFB9204008FA782 /* AxeptioSDK_Example */,
+				607FACE41AFB9204008FA782 /* AxeptioSDK_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -299,7 +289,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AxeptioSDK_Example_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AxeptioSDK_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -312,7 +302,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AxeptioSDK_Example_App/Pods-AxeptioSDK_Example_App-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AxeptioSDK_Example/Pods-AxeptioSDK_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AxeptioSDK/AxeptioSDK.framework/AxeptioSDK",
@@ -325,7 +315,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AxeptioSDK_Example_App/Pods-AxeptioSDK_Example_App-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AxeptioSDK_Example/Pods-AxeptioSDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5C548841DFC8967E0FAE35E9 /* [CP] Check Pods Manifest.lock */ = {
@@ -343,7 +333,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AxeptioSDK_Example_App-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AxeptioSDK_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -375,7 +365,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* AxeptioSDK_Example_App */;
+			target = 607FACCF1AFB9204008FA782 /* AxeptioSDK_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -446,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -494,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -505,61 +495,50 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14287D5F00D7DDE58E7D190F /* Pods-AxeptioSDK_Example_App.debug.xcconfig */;
+			baseConfigurationReference = 6EA3080F4543AE21B2B74884 /* Pods-AxeptioSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 5DS79WMFEL;
 				EXCLUDED_ARCHS = x86_64;
 				INFOPLIST_FILE = AxeptioSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.axeptio.sdk.example-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD3AD4DE282F78C5BEC268E6 /* Pods-AxeptioSDK_Example_App.release.xcconfig */;
+			baseConfigurationReference = 10A6548B9799287CDD52DF96 /* Pods-AxeptioSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 5DS79WMFEL;
 				EXCLUDED_ARCHS = x86_64;
 				INFOPLIST_FILE = AxeptioSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.axeptio.sdk.example-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE77199035849753190AD3AA /* Pods-AxeptioSDK_Example_Tests.debug.xcconfig */;
+			baseConfigurationReference = 1045ADF71828F85E18B7148F /* Pods-AxeptioSDK_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 5DS79WMFEL;
 				EXCLUDED_ARCHS = x86_64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -570,48 +549,37 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.axeptio.sdk.example-test";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AxeptioSDK_Example_Example.app/AxeptioSDK_Example_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AxeptioSDK_Example.app/AxeptioSDK_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEE393A9F1562BB306AF5539 /* Pods-AxeptioSDK_Example_Tests.release.xcconfig */;
+			baseConfigurationReference = 81676EB327682CB10FB44C7D /* Pods-AxeptioSDK_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 5DS79WMFEL;
 				EXCLUDED_ARCHS = x86_64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.axeptio.sdk.example-test";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AxeptioSDK_Example_Example.app/AxeptioSDK_Example_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AxeptioSDK_Example.app/AxeptioSDK_Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AxeptioSDK_Example" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AxeptioSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -620,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AxeptioSDK_Example_App" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AxeptioSDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -629,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AxeptioSDK_Example_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AxeptioSDK_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,

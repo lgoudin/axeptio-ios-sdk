@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/paul/WORK/AXEPTIO/PUBLISHED/axeptio-ios-sdk/Example/AxeptioSDK_Example.xcodeproj">
+      location = "group:AxeptioSDK.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

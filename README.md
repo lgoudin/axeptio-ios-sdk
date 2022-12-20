@@ -1,73 +1,26 @@
-# Introduction
+# Axeptio SDK @0.3.4
 
-User consent is not limited to the web, but applies to all platforms that collect user data. This includes mobile devices.
+## Introduction
 
-# Current Release : AxeptioSDK @0.4.0
-
-## Author
-
-Axeptio
-
-## License
-
-AxeptioSDK is available under the MIT license. See the LICENSE file for more information.
+User consent is not only limited to the Web but applies to all platforms collecting user data. Mobile devices are part of it.
 
 ## Requirements
 
 Minimum iOS version: **12.x**
 
-Better with xCode **14.x.x**
+Better with xCode **13.x.x**
 
-## Improvments
+## Installation
 
-####  **0.4.0**
- - iOS 12
- - xCode 14
- - synchronise version number with android sdk version 
- - fixes
-    - layout management , info layout was not managed
-    - add a rerere api to reinitialise the SDK with a new Client ID and version project id
-    - update test app accordingly to demo the  rerere feature swapping in between two client id and version (hardcoded))
+1. If you haven’t already, install the latest version of [CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation).
 
-####  **0.3.6**
- - iOS 12
- - xCode 14
- - fixes
- 	 - remove unnecessary files that prevented publishing something on the App Store
-	the signing process failed to sign them.
-	these files were added by mistake 
-
-####  **0.3.4**
- - iOS 12
- - xCode 13
- - fixes
- 	- [UX Improvements] - reduce left and right horizontal insets to provide a better width
-	- [fixes AXE-1601] - in cookie, vendor, the domain turns out to be optional and not mandatory
-
-####  **0.3.3**
-- iOS 12 
-- xCode 12
-- fixes 
-	- [AXE-665] fix crash when one or more H, S B values are missing in the paintT ransfrom JSON Item
-	
-#### **0.3.1**
-- iOS 11
-- xCode 11
-
-
-
-
-# Installation
-
-### 1. If you haven’t already, install the latest version of [CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation).
-
-### 2. If you don’t have an existing Podfile, create a new one by running the command:
+2. If you don’t have an existing Podfile, create a new one by running the command:
 
 ```bash
-pod Init
+pod init
 ```
 
-### 3. Add `pod 'AxeptioSDK'` to your Podfile:
+3. Add `pod 'AxeptioSDK'` to your Podfile:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
@@ -87,35 +40,23 @@ post_install do |installer|
 end
 ```
 
-### 4. Run the following command:
+4. Run the following command:
 
 ```bash
 pod install
 ```
 
-### 5. In the future, to update the SDK to its latest version, run the command:
+5. In the future, to update the SDK to its latest version, run the command:
 
 ```bash
 pod update AxeptioSDK
 ```
 
-```bash
-pod update
-```
+## Getting started
 
-### 6. Cleaning up your project from everything related to CocoaPods
-```bash
-pod deintegrate
-```
+### Swift
 
-##### Remark
-- by simply deleting the files (Podfile, Podfile.lock, xcworkspace file (package folder in fact) and Pods Folder, you do not delete the change that was made in your xCode project file settings
-
-# Getting started
-
-## Swift
-
-In the main controller of your applmication, import the `AxeptioSDK` module, initialize the SDK by calling the `initialize` method providing a `clientId` and a `version`. Once initialization is complete, you can make the widget appear by calling the `showConsentController` method.
+In the main controller of your app, import the `AxeptioSDK` module, initialize the SDK by calling the `initialize` method providing a `clientId` and a `version`. Once the initialization is completed, you can make the widget appear by calling the `showConsentController` method.
 
 ```swift
 import UIKit
@@ -146,9 +87,9 @@ class ViewController: UIViewController {
 }
 ```
 
-If your application supports multiple languages, you have probably created a different version for each of them in the Axeptio [administration web page] (https://admin.axeptio.eu). In this case you can store the version for each language in the `Localizable.strings` file and use `NSLocalizedString` to get the appropriate version for the user.
+If your app supports multiple languages you probably have created a different version for each of the language in Axeptio's [admin web page](https://admin.axeptio.eu). In this case you can store the version for each language in `Localizable.strings` file and use `NSLocalizedString` to get the appropriate version for the user.
 
-## Objective-C
+### Objective-C
 
 ```objective-c
 #import "ViewController.h"
@@ -187,10 +128,6 @@ If your application supports multiple languages, you have probably created a dif
 
 ## API Reference
 
-### Apple Tracking User Data permission
-- https://developer.apple.com/app-store/user-privacy-and-data-use/
-
-
 ### Properties
 
 #### token
@@ -203,28 +140,10 @@ This property is particularly useful for apps using webviews. By opening the web
 
 #### initialize
 
-The `initialize` function initializes the SDK by fetching the configuration and calling the completion handler when finished. 
-
-If this fails, because of the network for example, it is possible to call the `initialize` function again, unless the error is Already Initialized.
-
-If you need to reset the Axeptio SDK for a different project id for the same client id or change both you should call the revere function
+The `initialize` function initializes the SDK by fetching the configuration and calling the completion handler when done. If it fails (because of network for example) it is OK to call the `initialize` function again.
 
 ```swift
 func initialize(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
-```
-
-#### rerere (reset)
-
-The `rerere` function resets the SDK by fetching the configuration and calling the completion handler when finished in the same way as `initialize` function described above.
-
-The main difference is that the call to `rerere` first releases everything that has been loaded for the current Client Id and Project Id, then reloads the data for the new Client Id and Project Id. 
-
-Most of the time this should be related to using another version of the project for the same Client Id - both can change.
-
-The name `rerere` comes from the `git rerere` function involved in resolving the same conflicts over and over again until the subject branches are done.
-
-```swift
-func rerere(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
 ```
 
 #### showConsentController
@@ -235,7 +154,7 @@ The `showConsentController` function shows Axeptio's widget to the user in a giv
 func showConsentController(initialStepIndex: Int = 0, onlyFirstTime: Bool = true, in viewController: UIViewController, animated: Bool = true, completionHandler: @escaping (Error?) -> Void) -> (() -> Void)?
 ```
 
-If the widget is displayed, the function returns a reject handler that you can call to hide the widget if necessary. Otherwise, it returns nil.
+If the widget is shown the function returns a dismiss handler that you can call to hide the widget should you need it. Otherwise returns nil.
 
 #### getUserConsent
 
@@ -247,28 +166,31 @@ func getUserConsent(forVendor name: String) -> Bool?
 
 #### setUserConsentToDisagreeWithAll
 
-The `setUserConsentToDisagreeWithAll` function sets consent for all vendors to false and saves the preference. This function is useful when using application tracking transparency. If a user refuses the tracking permission request, call this function to have the CMP not displayed and the user's consent saved in the Axeptio consent log.
+The `setUserConsentToDisagreeWithAll` function sets the consent for all vendors to false and saves the preference. This function is useful when using the App Tracking Transparency. If a user denies the tracking authorization request, call this function so that the CMP is not displayed and the consent of the user is saved in the Axeptio consent registry.
 
+## Author
 
-# References
+Axeptio
 
-- CocoaPods
-  - https://cocoapods.org
-- All CocoaPods' Guide
-  - https://guides.cocoapods.org
-- Installing CocoaPods with Homebrew
-  - https://formulae.brew.sh/formula/cocoapods
-- Getting started
-  - https://guides.cocoapods.org/using/getting-started.html
-- Using CocoaPods
-  - https://guides.cocoapods.org/using/using-cocoapods.html
-- pod install vs pod update
-  - https://guides.cocoapods.org/using/pod-install-vs-update.html
-- CocoaPods Command Line reference
-  - https://guides.cocoapods.org/terminal/commands.html
-- What is a Podfile ?
-  - https://guides.cocoapods.org/using/the-podfile.html
-- Podfile syntax reference
-  - https://guides.cocoapods.org/syntax/podfile.html
-- How to remove CocoaPods from Xcode Project ?
-  - https://medium.com/app-makers/how-to-remove-cocoapods-from-xcode-project-5166c19152
+## License
+
+AxeptioSDK is available under the MIT license. See the LICENSE file for more info.
+
+## Improvments
+
+#### **0.3.1**
+- iOS 11
+- xCode 11
+
+####  **0.3.3**
+- iOS 12 
+- xCode 12
+- fixes 
+	- [AXE-665] fix crash when one or more H, S B values are missing in the paintT ransfrom JSON Item
+	
+####  **0.3.4**
+ - iOS 12
+ - xCode 13
+ - fixes
+ 	- [UX Improvements] - reduce left and right horizontal insets to provide a better width
+	- [fixes AXE-1601] - in cookie, vendor, the domain turns out to be optional and not mandatory
